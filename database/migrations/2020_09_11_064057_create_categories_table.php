@@ -17,6 +17,7 @@ class CreateCategoriesTable extends Migration
             $table->increments('id');
             $table->integer('store_id')->unsigned();
             $table->string('category');
+            $table->string('image');
             $table->boolean('is_food');
             $table->timestamps();
 
