@@ -16,4 +16,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::post('/register', 'API\AuthController@register');
 Route::post('/login', 'API\AuthController@login');
+Route::get('/category', 'API\CategoryController@category');
 

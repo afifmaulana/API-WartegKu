@@ -41,6 +41,12 @@ class CategorySeeder extends Seeder
             'image' => 'picture.jpg',
             'is_food' => true
         ]);
+        \App\Category::create([
+            'store_id' => 1,
+            'category' => 'Minuman',
+            'image' => 'picture.jpg',
+            'is_food' => false
+        ]);
 
 
 
@@ -74,6 +80,12 @@ class CategorySeeder extends Seeder
             'image' => 'picture.jpg',
             'is_food' => true
         ]);
+        \App\Category::create([
+            'store_id' => 2,
+            'category' => 'Minuman',
+            'image' => 'picture.jpg',
+            'is_food' => false
+        ]);
 
 
 
@@ -107,6 +119,12 @@ class CategorySeeder extends Seeder
             'image' => 'picture.jpg',
             'is_food' => true
         ]);
+        \App\Category::create([
+            'store_id' => 3,
+            'category' => 'Minuman',
+            'image' => 'picture.jpg',
+            'is_food' => false
+        ]);
 
 
 
@@ -139,6 +157,12 @@ class CategorySeeder extends Seeder
             'category' => 'Gorengan',
             'image' => 'picture.jpg',
             'is_food' => true
+        ]);
+        \App\Category::create([
+            'store_id' => 4,
+            'category' => 'Minuman',
+            'image' => 'picture.jpg',
+            'is_food' => false
         ]);
     }
 }
