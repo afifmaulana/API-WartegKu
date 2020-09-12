@@ -18,4 +18,23 @@ class CategoryController extends Controller
             'data' => CategoryResource::collection($categorys),
         ]);
     }
+
+    public function FoodCategory()
+    {
+        $categorys = Category::where('is_food', true)->get();
+        return response()->json([
+            'message' => 'Berhasil Menampilkan Category',
+            'status' => true,
+            'data' => CategoryResource::collection($categorys),
+        ]);
+    }
+    public function DrinkCategory()
+    {
+        $categorys = Category::where('is_food', false)->get();
+        return response()->json([
+            'message' => 'Berhasil Menampilkan Category',
+            'status' => true,
+            'data' => CategoryResource::collection($categorys),
+        ]);
+    }
 }
