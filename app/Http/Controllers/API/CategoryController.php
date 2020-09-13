@@ -28,6 +28,8 @@ class CategoryController extends Controller
             'data' => CategoryResource::collection($categorys),
         ]);
     }
+
+
     public function DrinkCategory()
     {
         $categorys = Category::where('is_food', false)->get();

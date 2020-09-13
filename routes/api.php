@@ -21,5 +21,6 @@ Route::get('/category/food', 'API\CategoryController@FoodCategory');
 Route::get('/category/drink', 'API\CategoryController@DrinkCategory');
 Route::get('/store/{category_id}', 'API\FoodDrinkController@StoreCategory');
 
-Route::post('/food/{store_id}', 'API\FoodDrinkController@store');
+Route::get('/food/latest', 'API\FoodDrinkController@showFoodLatest');
+Route::get('/food/{store_id}', 'API\FoodDrinkController@FoodStore');
 
