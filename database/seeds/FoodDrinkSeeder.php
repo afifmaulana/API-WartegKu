@@ -96,6 +96,5 @@ class FoodDrinkSeeder extends Seeder
             'image' => 'sample.jpg',
             'price' => '5000',
         ]);
-
     }
 }

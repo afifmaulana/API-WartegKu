@@ -18,10 +18,10 @@ class CreateFoodDrinksTable extends Migration
             $table->integer('store_id')->unsigned();
             $table->integer('category_id')->unsigned();
             $table->string('name');
-            $table->text('descripton');
+            $table->text('description');
             $table->string('image');
-            $table->boolean('status');
             $table->string('price');
+            $table->boolean('status')->nullable();
             $table->timestamps();
 
             $table->foreign('store_id')->references('id')->on('stores')->onDelete('CASCADE');
