@@ -19,4 +19,5 @@ Route::post('/login', 'API\AuthController@login');
 Route::get('/category', 'API\CategoryController@category');
 Route::get('/category/food', 'API\CategoryController@FoodCategory');
 Route::get('/category/drink', 'API\CategoryController@DrinkCategory');
+Route::get('/store/{category_id}', 'API\FoodDrinkController@StoreCategory');
 

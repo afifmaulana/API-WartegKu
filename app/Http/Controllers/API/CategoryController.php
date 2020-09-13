@@ -37,4 +37,6 @@ class CategoryController extends Controller
             'data' => CategoryResource::collection($categorys),
         ]);
     }
+
+
 }
