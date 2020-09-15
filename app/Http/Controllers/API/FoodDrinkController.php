@@ -16,7 +16,7 @@ class FoodDrinkController extends Controller
     public function StoreCategory($category_id)
     {
         $foods = FoodDrink::where('category_id', $category_id)->get();
-        $result =[];
+        $result = [];
         foreach ($foods as $food) {
             array_push($result,$food->store);
         }

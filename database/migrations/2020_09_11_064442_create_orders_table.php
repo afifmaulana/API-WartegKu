@@ -17,7 +17,7 @@ class CreateOrdersTable extends Migration
             $table->increments('id');
             $table->integer('store_id')->unsigned();
             $table->integer('user_id')->unsigned();
-            $table->string('total_price');
+            $table->integer('total_price');
             $table->timestamps();
 
             $table->foreign('store_id')->references('id')->on('stores')->onDelete('CASCADE');

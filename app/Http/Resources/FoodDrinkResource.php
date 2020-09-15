@@ -20,6 +20,10 @@ class FoodDrinkResource extends JsonResource
             "description" => $this->description,
             "image" => $this->image,
             "price" => $this->price,
+            "store" => [
+                "id" => $this->store['id'],
+                "name" => $this->store['name']
+            ]
         ];
     }
 }
