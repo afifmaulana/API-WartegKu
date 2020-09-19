@@ -5,8 +5,8 @@
     <meta name="description" content="multikart">
     <meta name="keywords" content="multikart">
     <meta name="author" content="multikart">
-    <link rel="icon" href="{{ asset ('assets-landingpage/images/favicon/1.png') }}" type="image/x-icon">
-    <link rel="shortcut icon" href="{{ asset ('assets-landingpage/images/favicon/1.png') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset ('assets-landingpage/images/favicon.png') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset ('assets-landingpage/images/favicon.png') }}" type="image/x-icon">
     <title>Multikart - Multi-purpopse E-commerce Html Template</title>
 
     <!--Google font-->
