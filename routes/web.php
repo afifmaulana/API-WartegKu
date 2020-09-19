@@ -39,6 +39,7 @@ Route::post('/food/store', 'Store\FoodDrinkController@store')->name('food.store'
 Route::get('/food/edit/{id}', 'Store\FoodDrinkController@edit')->name('food.edit');
 Route::patch('/food/update/{id}', 'Store\FoodDrinkController@update')->name('food.update');
 Route::get('/food/destroy/{id}', 'Store\FoodDrinkController@destroy')->name('food.destroy');
+Route::get('/order', 'Store\OrderController@index')->name('order.index');
 
 Route::get('/profile', 'Store\ProfileController@index')->name('profile.index');
 Route::post('/profile/store', 'Store\ProfileController@store')->name('profile.store');

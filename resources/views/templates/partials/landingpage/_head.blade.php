@@ -14,6 +14,7 @@
 
     <!-- Icons -->
     <link rel="stylesheet" type="text/css" href="{{ asset ('assets-landingpage/css/fontawesome.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset ('assets-landingpage/css/fontawesome.min.css') }}">
 
     <!--Slick slider css-->
     <link rel="stylesheet" type="text/css" href="{{ asset ('assets-landingpage/css/slick.css') }}">

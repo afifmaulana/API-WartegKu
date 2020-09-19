@@ -10,7 +10,11 @@
 <script src="{{ asset ('assets/js/icons/feather-icon/feather-icon.js') }}"></script>
 
 <!-- Sidebar jquery-->
-<script src="{{ asset ('assets/js/sidebar-menu.js') }} }}"></script>
+<script src="{{ asset ('assets/js/sidebar-menu.js') }}"></script>
+
+<!-- Datatable js-->
+<script src="{{ asset ('assets/js/datatables/jquery.dataTables.min.js') }}"></script>
+<script src="{{ asset ('assets/js/datatables/custom-basic.js') }}"></script>
 
 <!-- touchspin js-->
 <script src="{{ asset ('assets/js/touchspin/vendors.min.js') }}"></script>

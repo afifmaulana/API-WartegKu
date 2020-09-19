@@ -1,6 +1,10 @@
 <!-- latest jquery-->
 <script src="{{ asset ('assets-landingpage/js/jquery-3.3.1.min.js') }}"></script>
 
+<script src="{{ asset ('assets-landingpage/js/fontawesome.js') }}"></script>
+<script src="{{ asset ('assets-landingpage/js/fontawesome.min.js') }}"></script>
+
+
 <!-- fly cart ui jquery-->
 <script src="{{ asset ('assets-landingpage/js/jquery-ui.min.js') }}"></script>
 

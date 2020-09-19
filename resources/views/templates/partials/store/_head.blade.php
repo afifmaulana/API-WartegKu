@@ -25,6 +25,9 @@
     <!-- ico-font-->
     <link rel="stylesheet" type="text/css" href="{{ asset ('assets/css/icofont.css') }}">
 
+    <!-- Datatables css-->
+    <link rel="stylesheet" type="text/css" href="{{ asset ('assets/css/datatables.css') }}">
+
     <!-- Prism css-->
     <link rel="stylesheet" type="text/css" href="{{ asset ('assets/css/prism.css') }}">
 

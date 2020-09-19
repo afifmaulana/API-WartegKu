@@ -8,8 +8,8 @@
                     <div class="menu-left">
 
                         <div class="brand-logo">
-                            <a href="index.html"><img src="{{ asset ('assets-landingpage/images/icon/logo.png') }}"
-                                                      class="img-fluid blur-up lazyload" alt=""></a>
+                            <a href="index.html"><img src="{{asset ('assets-landingpage/images/wartegku.png') }}" alt="" width="200" height="60"
+                                                      class="img-fluid blur-up lazyload"></a>
                         </div>
                     </div>
                     <div class="menu-right pull-right">
