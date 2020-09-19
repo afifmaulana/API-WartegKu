@@ -53,8 +53,8 @@
                 <div class="main-menu">
                     <div class="menu-left">
                         <div class="brand-logo">
-                            <a href="index.html"><img src="{{asset ('assets-landingpage/images/wartegku.png') }}" alt="" width="170" height="40"
-                                                      class="img-fluid blur-up lazyload"></a>
+                            <a href="index.html"><img src="{{asset ('assets-landingpage/images/wartegku.png') }}" alt=""
+                                 width="170" height="70" class="img-fluid blur-up lazyload"></a>
                         </div>
                     </div>
                     <div class="menu-right pull-right">
