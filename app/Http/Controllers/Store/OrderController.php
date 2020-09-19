@@ -10,6 +10,11 @@ use Illuminate\Support\Facades\Auth;
 
 class OrderController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth:store');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -17,7 +22,8 @@ class OrderController extends Controller
      */
     public function index()
     {
-        $datas = OrderDetails::where(Auth::guard('store')->user()->id);
+        $datas = OrderDetails::whereHas('order', function($order){
+            $order->where('store_id', Auth::guard('store')->user()->id);})->get();
         return view('pages.order.index', compact('datas'));
     }
 

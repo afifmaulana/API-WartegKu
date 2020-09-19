@@ -41,15 +41,12 @@
                             <th>Nama Makanan</th>
                             <th>Jumlah Pesanan</th>
                             <th>Total Harga</th>
-                            <th>Date</th>
-                            <th>Total</th>
+                            <th>Action</th>
                         </tr>
                         </thead>
                         <tbody>
                             @foreach ($datas as $data)
                         <tr>
-
-
                             <td>{{$loop->iteration}}</td>
                             <td>
                                 <div class="d-flex">
@@ -59,11 +56,9 @@
                         <td>{{$data->food->name}}</td>
                             <td>{{$data->qty}}</td>
                             <td>{{$data->order->total_price}}</td>
-                            <td>Dec 10,18</td>
                             <td>$54671</td>
                         </tr>
                         @endforeach
-
                         </tbody>
                     </table>
                 </div>
