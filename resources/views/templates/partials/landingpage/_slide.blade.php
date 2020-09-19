@@ -12,7 +12,7 @@
                                    <p> <h3> Menjadi Mitra Kami</h3></p>
                                     <h1>WartegKu</h1>
                                     <a href="{{route('store.login')}}" class="btn btn-solid white-bg">Masuk</a>
-                                    <a href="#" class="btn btn-solid">Daftar</a>
+                                <a href="{{route('store.register')}}" class="btn btn-solid">Daftar</a>
 
                                 </div>
                             </div>
