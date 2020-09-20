@@ -7,7 +7,7 @@
     <meta name="author" content="multikart">
     <link rel="icon" href="{{ asset ('assets-landingpage/images/favicon.png') }}" type="image/x-icon">
     <link rel="shortcut icon" href="{{ asset ('assets-landingpage/images/favicon.png') }}" type="image/x-icon">
-    <title>Multikart - Multi-purpopse E-commerce Html Template</title>
+    <title>WartegKu-Sahabat Para Bos Warteg</title>
 
     <!--Google font-->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
@@ -22,7 +22,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset ('assets-landingpage/css/bars-solid.svg') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset ('assets-landingpage/css/angle-right-solid.svg') }}">
 
-    
+
     <!--Slick slider css-->
     <link rel="stylesheet" type="text/css" href="{{ asset ('assets-landingpage/css/slick.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset ('assets-landingpage/css/slick-theme.css') }}">
