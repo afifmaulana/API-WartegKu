@@ -13,7 +13,6 @@
 
                 <li><a class="text-dark" href="#!" onclick="javascript:toggleFullScreen()"><i data-feather="maximize-2"></i></a></li>
 
-
                 <li class="onhover-dropdown">
                     <div class="media align-items-center"><img class="align-self-center pull-right img-50 rounded-circle blur-up lazyloaded" src="{{asset('uploads/store/'.Auth::guard('store')->user()->logo)}}" alt="header-user">
                         <div class="dotted-animation"><span class="animate-circle"></span><span class="main-circle"></span></div>

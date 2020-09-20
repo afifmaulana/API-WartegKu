@@ -21,24 +21,5 @@
                 </div>
             </div>
         </div>
-
-        <div>
-            <div class="home text-center">
-                <img src="{{ asset ('assets-landingpage/images/home-banner/2.jpg') }}" alt="" class="bg-img blur-up lazyload">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <div class="slider-contain">
-                                <div>
-                                    <h4>welcome to fashion</h4>
-                                    <h1>women fashion</h1>
-                                    <a href="#" class="btn btn-solid">shop now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 </section>

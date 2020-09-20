@@ -18,7 +18,7 @@
                                 <div class="toggle-nav"><i class="fa fa-bars sidebar-bar"></i></div>
                                 <ul id="main-menu" class="sm pixelstrap sm-horizontal">
                                     <li>
-                                        <div class="mobile-back text-right">Back<i class="fa fa-angle-right pl-2"
+                                        <div class="mobile-back text-right">Back<i class="fas fa-bars"
                                                 aria-hidden="true"></i></div>
                                     </li>
                                     <li><a href="">Home</a></li>

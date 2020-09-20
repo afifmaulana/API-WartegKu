@@ -16,6 +16,9 @@
     <link rel="stylesheet" type="text/css" href="{{ asset ('assets-landingpage/css/fontawesome.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset ('assets-landingpage/css/fontawesome.min.css') }}">
 
+    <link rel="stylesheet" type="text/css" href="{{ asset ('assets-landingpage/css/bars-solid.svg') }}">
+
+
     <!--Slick slider css-->
     <link rel="stylesheet" type="text/css" href="{{ asset ('assets-landingpage/css/slick.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset ('assets-landingpage/css/slick-theme.css') }}">
@@ -28,6 +31,7 @@
 
     <!-- Bootstrap css -->
     <link rel="stylesheet" type="text/css" href="{{ asset ('assets-landingpage/css/bootstrap.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset ('assets-landingpage/css/bootstrap.min.css') }}">
 
     <!-- Theme css -->
     <link rel="stylesheet" type="text/css" href="{{ asset ('assets-landingpage/css/color1.css') }}" media="screen" id="color">

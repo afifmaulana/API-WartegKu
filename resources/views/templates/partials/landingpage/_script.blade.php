@@ -1,6 +1,7 @@
 <!-- latest jquery-->
 <script src="{{ asset ('assets-landingpage/js/jquery-3.3.1.min.js') }}"></script>
 
+
 <script src="{{ asset ('assets-landingpage/js/fontawesome.js') }}"></script>
 <script src="{{ asset ('assets-landingpage/js/fontawesome.min.js') }}"></script>
 
@@ -26,6 +27,7 @@
 
 <!-- Bootstrap js-->
 <script src="{{ asset ('assets-landingpage/js/bootstrap.js') }}"></script>
+<script src="{{ asset ('assets-landingpage/js/bootstrap.min.js') }}"></script>
 
 <!-- Bootstrap Notification js-->
 <script src="{{ asset ('assets-landingpage/js/bootstrap-notify.min.js') }}"></script>
