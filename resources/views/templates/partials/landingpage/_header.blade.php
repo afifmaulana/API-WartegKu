@@ -15,10 +15,10 @@
                     <div class="menu-right pull-right">
                         <div>
                             <nav id="main-nav">
-                                <div class="toggle-nav"><i class="fa fa-bars sidebar-bar"></i></div>
+                                <div class="toggle-nav"><i class="fas fa-bars"></i></div>
                                 <ul id="main-menu" class="sm pixelstrap sm-horizontal">
                                     <li>
-                                        <div class="mobile-back text-right">Back<i class="fas fa-bars"
+                                        <div class="mobile-back text-right">Back<i class="fa fa-bars"
                                                 aria-hidden="true"></i></div>
                                     </li>
                                     <li><a href="">Home</a></li>
