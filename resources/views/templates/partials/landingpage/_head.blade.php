@@ -20,8 +20,9 @@
     <link rel="stylesheet" type="text/css" href="{{ asset ('assets-landingpage/css/fontawesome.min.css') }}">
 
     <link rel="stylesheet" type="text/css" href="{{ asset ('assets-landingpage/css/bars-solid.svg') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset ('assets-landingpage/css/angle-right-solid.svg') }}">
 
-
+    
     <!--Slick slider css-->
     <link rel="stylesheet" type="text/css" href="{{ asset ('assets-landingpage/css/slick.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset ('assets-landingpage/css/slick-theme.css') }}">
