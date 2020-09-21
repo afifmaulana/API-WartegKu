@@ -24,7 +24,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-   // protected $redirectTo = '/home';
+    // protected $redirectTo = '/home';
 
     /**
      * Create a new controller instance.
@@ -60,7 +60,7 @@ class LoginController extends Controller
             'password' => $request->password,
         ];
 
-        if (Auth::guard('store')->attempt($credential, $request->remember)){
+        if (Auth::guard('store')->attempt($credential, $request->remember)) {
             return redirect()->intended(route('dashboard.index'));
         }
 
@@ -72,5 +72,4 @@ class LoginController extends Controller
         Auth::guard('store')->logout();
         return redirect()->route('store.login');
     }
-
 }

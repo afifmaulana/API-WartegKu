@@ -53,7 +53,7 @@
                 <div class="main-menu">
                     <div class="menu-left">
                         <div class="brand-logo">
-                            <a href="index.html"><img src="{{asset ('assets-landingpage/images/wartegku.png') }}" alt="" width="170" height="100"
+                            <a href="home"><img src="{{asset ('assets-landingpage/images/wartegku.png') }}" alt="" width="170" height="100"
                                                       class="img-fluid blur-up lazyload"></a>
                         </div>
                     </div>
@@ -85,14 +85,14 @@
         <div class="row">
             <div class="col-sm-6">
                 <div class="page-title">
-                    <h2>customer's register</h2>
+                    <h2>Daftar Mitra</h2>
                 </div>
             </div>
             <div class="col-sm-6">
                 <nav aria-label="breadcrumb" class="theme-breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item active">Register</li>
+                        <li class="breadcrumb-item active">Daftar</li>
                     </ol>
                 </nav>
             </div>
@@ -106,8 +106,8 @@
 <section class="login-page section-b-space">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6">
-                <h3>Register</h3>
+            <div class="col-lg-12">
+                <h3>Daftar</h3>
                 <div class="theme-card">
                     <form class="theme-form" method="POST" action="{{route('store.register.submit')}}">
                         @csrf
@@ -143,7 +143,7 @@
                             @enderror
                         </div>
 
-                        <button type="submit" class="btn btn-solid">Register</button>
+                        <button type="submit" class="btn btn-solid">Daftar</button>
                     </form>
                 </div>
             </div>

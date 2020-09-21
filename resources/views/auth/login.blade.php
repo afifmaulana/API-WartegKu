@@ -53,7 +53,7 @@
                 <div class="main-menu">
                     <div class="menu-left">
                         <div class="brand-logo">
-                            <a href="index.html"><img src="{{asset ('assets-landingpage/images/wartegku.png') }}" alt=""
+                        <a href="home"><img src="{{asset ('assets-landingpage/images/wartegku.png') }}" alt=""
                                  width="170" height="100" class="img-fluid blur-up lazyload"></a>
                         </div>
                     </div>
@@ -85,14 +85,14 @@
         <div class="row">
             <div class="col-sm-6">
                 <div class="page-title">
-                    <h2>customer's login</h2>
+                    <h2>Mitra login</h2>
                 </div>
             </div>
             <div class="col-sm-6">
                 <nav aria-label="breadcrumb" class="theme-breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item active">login</li>
+                        <li class="breadcrumb-item active">masuk</li>
                     </ol>
                 </nav>
             </div>
@@ -107,7 +107,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
-                <h3>Login</h3>
+                <h3>Masuk</h3>
                 <div class="theme-card">
                     <form class="theme-form" method="POST" action="{{route('store.login.submit')}}">
                         @csrf
@@ -132,17 +132,17 @@
                             </span>
                             @enderror
                         </div>
-                        <button type="submit" class="btn btn-solid">Login</button>
+                        <button type="submit" class="btn btn-solid">Masuk</button>
                     </form>
                 </div>
             </div>
             <div class="col-lg-6 right-login">
-                <h3>New Customer</h3>
+                <h3>Mitra WartegKu</h3>
                 <div class="theme-card authentication-right">
-                    <h6 class="title-font">Create A Account</h6>
-                    <p>Sign up for a free account at our store. Registration is quick and easy. It allows you to be
-                        able to order from our shop. To start shopping click register.</p>
-                    <a href="{{route('store.register')}}" class="btn btn-solid">Create an Account</a>
+                    <h6 class="title-font">Daftar Mitra</h6>
+                    <p>Daftarkan segera Warung Anda untuk menjangkau para pembeli secara luas
+                        dan mudah hanya melalui gadget. </p>
+                    <a href="{{route('store.register')}}" class="btn btn-solid">Daftar</a>
                 </div>
             </div>
         </div>
@@ -158,8 +158,7 @@
             <div class="row">
                 <div class="col-xl-6 col-md-6 col-sm-12">
                     <div class="footer-end">
-                        <p><i class="fa fa-copyright" aria-hidden="true"></i> 2017-18 themeforest powered by
-                            pixelstrap</p>
+                        <p><i class="fas fa-copyright" aria-hidden="true"></i> 2020 WartegKu | Sahabat Bos Warteg</p>
                     </div>
                 </div>
                 <div class="col-xl-6 col-md-6 col-sm-12">
