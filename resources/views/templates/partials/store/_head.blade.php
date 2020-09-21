@@ -2,12 +2,12 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Multikart admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
-    <meta name="keywords" content="admin template, Multikart admin template, dashboard template, flat admin template, responsive admin template, web app">
-    <meta name="author" content="pixelstrap">
+    <meta name="description" content="WartegKu">
+    <meta name="keywords" content="WartegKu">
+    <meta name="author" content="WartegKu">
     <link rel="icon" href="{{ asset ('assets/images/favicon.png') }}" type="image/x-icon">
     <link rel="shortcut icon" href="{{ asset ('assets/images/favicon.png') }}'" type="image/x-icon">
-    <title>WartegKu-Sahabat Para Bos Warteg</title>
+    <title>WartegKu-Siap Jadi Partnermu</title>
 
     <!-- Google font-->
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">

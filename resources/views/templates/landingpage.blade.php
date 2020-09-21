@@ -29,7 +29,9 @@
         <div class="col">
             <div class="title1 section-t-space">
                 <h4>Jadilah Mitra Kami</h4>
-                <h6>Menjangkau para pembeli secara luas dengan gadget</h6>
+                <h5>Menjangkau para pembeli secara luas hanya dengan gadget. Buat pemesanan makanan
+                    di warung Anda secara Online bersama Kami.
+                </h5>
                 <h2 class="title-inner1">WartegKu</h2>
             </div>
         </div>
@@ -179,7 +181,7 @@
                     <div class="banner-contain">
                         <h2>2020</h2>
                         <h3>WartegKu</h3>
-                        <h4>Sahabat Bos Warteg</h4>
+                        <h4>Ayo Jalin Hubungan Denganku</h4>
                     </div>
                 </div>
             </div>
