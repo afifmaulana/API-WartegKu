@@ -22,7 +22,7 @@
                                                 aria-hidden="true"></i></div>
                                     </li>
                                     <li><a href="home">Beranda</a></li>
-                                    <li><a href="#">Tentang</a></li>
+                                <li><a href="{{route('about.index')}}">Tentang</a></li>
                                     <li><a href="#">Blog</a></li>
                                     <li><a href="#">Bantuan</a></li>
                                 </ul>

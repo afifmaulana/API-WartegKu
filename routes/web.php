@@ -31,6 +31,8 @@ Route::get('/store/logout', 'Store\Auth\LoginController@logout')->name('store.lo
 Route::get('/store/register', 'Store\Auth\RegisterController@showRegisterForm')->name('store.register');
 Route::post('/store/register', 'Store\Auth\RegisterController@register')->name('store.register.submit');
 
+Route::get('/about', 'Store\AboutController@index')->name('about.index');
+
 
 Route::get('/dashboard', 'Store\DashboardController@index')->name('dashboard.index');
 Route::get('/food', 'Store\FoodDrinkController@index')->name('food.index');

@@ -60,13 +60,16 @@
                     <div class="menu-right pull-right">
                         <div>
                             <nav id="main-nav">
-                                <div class="toggle-nav"><i class="fa fa-bars sidebar-bar"></i></div>
+                                <div class="toggle-nav"><i class="fas fa-bars sidebar-bar"></i></div>
                                 <ul id="main-menu" class="sm pixelstrap sm-horizontal">
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">shop</a></li>
-                                    <li><a href="#">product</a></li>
-                                    <li><a href="#">pages</a></li>
-                                    <li><a href="#">blog</a></li>
+                                    <li>
+                                        <div class="mobile-back text-right">Back<i class="fas fa-angle-right"
+                                                aria-hidden="true"></i></div>
+                                    </li>
+                                    <li><a href="home">Beranda</a></li>
+                                    <li><a href="{{route('about.index')}}">Tentang</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Bantuan</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -91,7 +94,7 @@
             <div class="col-sm-6">
                 <nav aria-label="breadcrumb" class="theme-breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
                         <li class="breadcrumb-item active">Daftar</li>
                     </ol>
                 </nav>
@@ -161,8 +164,7 @@
             <div class="row">
                 <div class="col-xl-6 col-md-6 col-sm-12">
                     <div class="footer-end">
-                        <p><i class="fa fa-copyright" aria-hidden="true"></i> 2017-18 themeforest powered by
-                            pixelstrap</p>
+                        <p><i class="fa fa-copyright" aria-hidden="true"></i> 2020 WartegKu | Ayo Jalin Hubungan Denganku</p>
                     </div>
                 </div>
                 <div class="col-xl-6 col-md-6 col-sm-12">
