@@ -21,6 +21,7 @@
 
     <link rel="stylesheet" type="text/css" href="{{ asset ('assets-landingpage/css/bars-solid.svg') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset ('assets-landingpage/css/angle-right-solid.svg') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset ('assets-landingpage/css/star-solid.svg') }}">
 
 
     <!--Slick slider css-->

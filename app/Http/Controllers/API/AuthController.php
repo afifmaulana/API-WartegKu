@@ -16,19 +16,19 @@ class AuthController extends Controller
     {
         $this->middleware('guest');
     }
-    
+
     public function register(Request $request)
     {
-        $rules = Validator::make($request->all(),[
+        $rules = Validator::make($request->all(), [
             'name' => 'required',
             'email' => 'email|required|unique:users',
             'password' => 'min:6|required'
         ]);
-        if ($rules->fails()){
+        if ($rules->fails()) {
             return response()->json([
-                'message'=>$rules->errors(),
-                'status'=>false,
-                'data'=>(object)[]
+                'message' => $rules->errors(),
+                'status' => false,
+                'data' => (object)[]
             ]);
         }
 
@@ -51,17 +51,16 @@ class AuthController extends Controller
     {
 
         //Validasi Form
-        $rules = Validator::make($request->all(),[
+        $rules = Validator::make($request->all(), [
             'email' => 'email|required',
             'password' => 'min:6|required'
         ]);
 
-        if ($rules->fails())
-        {
+        if ($rules->fails()) {
             return response()->json([
-                'message' =>$rules->errors(),
-                'status' =>false,
-                'data'   =>(object)[]
+                'message' => $rules->errors(),
+                'status' => false,
+                'data'   => (object)[]
             ]);
         }
 
@@ -72,9 +71,8 @@ class AuthController extends Controller
             'password' => $request->password,
         ];
 
-        if (Auth::attempt($credential))
-        {
-            $user = Auth::user();
+        if (Auth::attempt($credential)) {
+            $user = Auth::guard('user')->user();
             return response()->json([
                 'message' => 'Berhasil Login',
                 'status' => true,
@@ -88,5 +86,4 @@ class AuthController extends Controller
             'data' => (object)[]
         ], 201);
     }
-
 }

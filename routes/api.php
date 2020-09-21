@@ -23,4 +23,4 @@ Route::get('/store/{category_id}', 'API\FoodDrinkController@StoreCategory');
 Route::get('/food/latest', 'API\FoodDrinkController@showFoodLatest');
 Route::get('/food/{store_id}', 'API\FoodDrinkController@FoodStore');
 Route::post('/order', 'API\OrderController@order');
-
+Route::get('/order/user', 'API\OrderController@orderByUser');

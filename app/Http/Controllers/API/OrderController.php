@@ -3,12 +3,19 @@
 namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\OrderDetailResource;
 use App\Order;
 use App\OrderDetails;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class OrderController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth:user');
+    }
+
     public function order(Request $request)
     {
 
@@ -16,7 +23,7 @@ class OrderController extends Controller
 
         $order = new Order();
         $order->store_id = $request['store_id'];
-        $order->user_id = 1;
+        $order->user_id = Auth::guard('user')->user()->id;
         $order->total_price = 0;
         $order->save();
 
@@ -37,6 +44,17 @@ class OrderController extends Controller
             'message' => 'Berhasil Melakukan Order',
             'status' => true,
             'data' => (object)[]
+        ]);
+    }
+
+    public function orderByUser()
+    {
+        $order = OrderDetails::whereHas('order', function($order){
+            $order->where('user_id', Auth::guard('user')->user()->id);})->get();
+        return response()->json([
+            'message' => "Berhasil Menampilkan Order User",
+            'data' => true,
+            'status' => OrderDetailResource::collection($order)
         ]);
     }
 }

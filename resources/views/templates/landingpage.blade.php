@@ -21,215 +21,153 @@
 @yield('content')
 <!-- Paragraph end -->
 
-<!-- Paragraph-->
-<div class="title1 section-t-space">
-    <h4>special offer</h4>
-    <h2 class="title-inner1">top collection</h2>
-</div>
-<div class="container">
+
+
+ <!-- blog section -->
+ <div class="container">
     <div class="row">
-        <div class="col-lg-6 offset-lg-3">
-            <div class="product-para">
-                <p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+        <div class="col">
+            <div class="title1 section-t-space">
+                <h4>Jadilah Mitra Kami</h4>
+                <h6>Menjangkau para pembeli secara luas dengan gadget</h6>
+                <h2 class="title-inner1">WartegKu</h2>
             </div>
         </div>
     </div>
 </div>
-<!-- Paragraph end -->
-
-
-<!-- Product slider -->
-<section class="section-b-space p-t-0 ratio_asos">
+<section class="blog p-t-0 ratio2_3">
     <div class="container">
         <div class="row">
-            <div class="col">
-                <div class="product-4 product-m no-arrow">
-                    <div class="product-box">
-                        <div class="img-wrapper">
-                            <div class="front">
-                                <a href="product-page(no-sidebar).html"><img src="{{ asset ('assets-landingpage/images/pro3/27.jpg') }}"
-                                        class="img-fluid blur-up lazyload bg-img" alt=""></a>
+            <div class="col-md-12">
+                <div class="slide-3 no-arrow">
+                    <div class="col-md-12">
+                        <a href="#">
+                            <div class="classic-effect">
+                                <div>
+                                    <img src="{{ asset ('assets-landingpage/images/blog/wartegsedap.jpg')}}" height="250" width="250" class="mx-auto d-block"
+                                        alt="">
+                                </div>
+                                <span></span>
                             </div>
-                            <div class="back">
-                                <a href="product-page(no-sidebar).html"><img src="{{ asset ('assets-landingpage/images/pro3/28.jpg') }}"
-                                        class="img-fluid blur-up lazyload bg-img" alt=""></a>
-                            </div>
-                            <div class="cart-info cart-wrap">
-                                <button data-toggle="modal" data-target="#addtocart" title="Add to cart">
-                                    <i class="ti-shopping-cart"></i>
-                                </button>
-                                <a href="javascript:void(0)" title="Add to Wishlist">
-                                    <i class="ti-heart" aria-hidden="true"></i>
-                                </a>
-                                <a href="#" data-toggle="modal" data-target="#quick-view" title="Quick View">
-                                    <i class="ti-search" aria-hidden="true"></i>
-                                </a>
-                                <a href="compare.html" title="Compare">
-                                    <i class="ti-reload" aria-hidden="true"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="product-detail">
-                            <div class="rating"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
-                                    class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                            </div>
-                            <a href="product-page(no-sidebar).html">
-                                <h6>Slim Fit Cotton Shirt</h6>
+                        </a>
+                        <div class="blog-details">
+                            <h4>25 Januari 2019</h4>
+                            <a href="#">
+                                <p>Warteg Sedap</p>
                             </a>
-                            <h4>$500.00</h4>
-                            <ul class="color-variant">
-                                <li class="bg-light0"></li>
-                                <li class="bg-light1"></li>
-                                <li class="bg-light2"></li>
-                            </ul>
+                            <hr class="style1">
+                            <h6>Owner: H.Kadir</h6>
+                            <hr>
                         </div>
                     </div>
-                    <div class="product-box">
-                        <div class="img-wrapper">
-                            <div class="lable-block"><span class="lable3">new</span> <span class="lable4">on
-                                    sale</span></div>
-                            <div class="front">
-                                <a href="product-page(no-sidebar).html">
-                                    <img src="{{ asset ('assets-landingpage/images/pro3/1.jpg') }}" class="img-fluid blur-up lazyload bg-img"
-                                        alt=""></a>
+                    <div class="col-md-12">
+                        <a href="#">
+                            <div class="classic-effect">
+                                <div>
+                                    <img src="{{ asset ('assets-landingpage/images/blog/bos.jpg')}}" height="250" width="250" class="mx-auto d-block"
+                                        alt="">
+                                </div>
+                                <span></span>
                             </div>
-                            <div class="back">
-                                <a href="product-page(no-sidebar).html"><img src="{{ asset ('assets-landingpage/images/pro3/2.jpg') }}"
-                                        class="img-fluid blur-up lazyload bg-img" alt=""></a>
-                            </div>
-                            <div class="cart-info cart-wrap">
-                                <button data-toggle="modal" data-target="#addtocart" title="Add to cart"><i
-                                        class="ti-shopping-cart"></i></button> <a href="javascript:void(0)"
-                                    title="Add to Wishlist"><i class="ti-heart" aria-hidden="true"></i></a> <a
-                                    href="#" data-toggle="modal" data-target="#quick-view" title="Quick View"><i
-                                        class="ti-search" aria-hidden="true"></i></a> <a href="compare.html"
-                                    title="Compare"><i class="ti-reload" aria-hidden="true"></i></a></div>
-                        </div>
-                        <div class="product-detail">
-                            <div class="rating"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
-                                    class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                            </div>
-                            <a href="product-page(no-sidebar).html">
-                                <h6>Slim Fit Cotton Shirt</h6>
+                        </a>
+                        <div class="blog-details">
+                            <h4>12 Februari 2019</h4>
+                            <a href="#">
+                                <p>Warteg Boss</p>
                             </a>
-                            <h4>$500.00 <del>$600.00</del></h4>
-                            <ul class="color-variant">
-                                <li class="bg-light0"></li>
-                                <li class="bg-light1"></li>
-                                <li class="bg-light2"></li>
-                            </ul>
+                            <hr class="style1">
+                            <h6>Owner: Pak Sofyan</h6>
+                            <hr>
                         </div>
                     </div>
-                    <div class="product-box">
-                        <div class="img-wrapper">
-                            <div class="lable-block"><span class="lable3">new</span> <span class="lable4">on
-                                    sale</span></div>
-                            <div class="front">
-                                <a href="product-page(no-sidebar).html"><img src="{{ asset ('assets-landingpage/images/pro3/33.jpg') }}"
-                                        class="img-fluid blur-up lazyload bg-img" alt=""></a>
+                    <div class="col-md-12">
+                        <a href="#">
+                            <div class="classic-effect">
+                                <div>
+                                    <img src="{{ asset ('assets-landingpage/images/blog/explore.png')}}" height="250" width="250" class="mx-auto d-block"
+                                        alt="">
+                                </div>
+                                <span></span>
                             </div>
-                            <div class="back">
-                                <a href="product-page(no-sidebar).html"><img src="{{ asset ('assets-landingpage/images/pro3/34.jpg') }}"
-                                        class="img-fluid blur-up lazyload bg-img" alt=""></a>
-                            </div>
-                            <div class="cart-info cart-wrap">
-                                <button data-toggle="modal" data-target="#addtocart" title="Add to cart"><i
-                                        class="ti-shopping-cart"></i></button> <a href="javascript:void(0)"
-                                    title="Add to Wishlist"><i class="ti-heart" aria-hidden="true"></i></a> <a
-                                    href="#" data-toggle="modal" data-target="#quick-view" title="Quick View"><i
-                                        class="ti-search" aria-hidden="true"></i></a> <a href="compare.html"
-                                    title="Compare"><i class="ti-reload" aria-hidden="true"></i></a></div>
-                        </div>
-                        <div class="product-detail">
-                            <div class="rating"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
-                                    class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                            </div>
-                            <a href="product-page(no-sidebar).html">
-                                <h6>Slim Fit Cotton Shirt</h6>
+                        </a>
+                        <div class="blog-details">
+                            <h4>04 Maret 2019</h4>
+                            <a href="#">
+                                <p>Warteg Explore</p>
                             </a>
-                            <h4>$500.00</h4>
-                            <ul class="color-variant">
-                                <li class="bg-light0"></li>
-                                <li class="bg-light1"></li>
-                                <li class="bg-light2"></li>
-                            </ul>
+                            <hr class="style1">
+                            <h6>Owner: Bang Alex</h6>
+                            <hr>
                         </div>
                     </div>
-                    <div class="product-box">
-                        <div class="img-wrapper">
-                            <div class="front">
-                                <a href="product-page(no-sidebar).html"><img src="{{ asset ('assets-landingpage/images/pro3/35.jpg') }}"
-                                        class="img-fluid blur-up lazyload bg-img" alt=""></a>
+                    <div class="col-md-12">
+                        <a href="#">
+                            <div class="classic-effect">
+                                <div>
+                                    <img src="{{ asset ('assets-landingpage/images/blog/brengos.jpg')}}" height="250" width="250" class="mx-auto d-block"
+                                        alt="">
+                                </div>
+                                <span></span>
                             </div>
-                            <div class="back">
-                                <a href="product-page(no-sidebar).html"><img src="{{ asset ('assets-landingpage/images/pro3/36.jpg') }}"
-                                        class="img-fluid blur-up lazyload bg-img" alt=""></a>
-                            </div>
-                            <div class="cart-info cart-wrap">
-                                <button data-toggle="modal" data-target="#addtocart" title="Add to cart"><i
-                                        class="ti-shopping-cart"></i></button> <a href="javascript:void(0)"
-                                    title="Add to Wishlist"><i class="ti-heart" aria-hidden="true"></i></a> <a
-                                    href="#" data-toggle="modal" data-target="#quick-view" title="Quick View"><i
-                                        class="ti-search" aria-hidden="true"></i></a> <a href="compare.html"
-                                    title="Compare"><i class="ti-reload" aria-hidden="true"></i></a></div>
-                        </div>
-                        <div class="product-detail">
-                            <div class="rating"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
-                                    class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                            </div>
-                            <a href="product-page(no-sidebar).html">
-                                <h6>Slim Fit Cotton Shirt</h6>
+                        </a>
+                        <div class="blog-details">
+                            <h4>21 Januari 2020</h4>
+                            <a href="#">
+                                <p>Warteng Brengos</p>
                             </a>
-                            <h4>$500.00</h4>
-                            <ul class="color-variant">
-                                <li class="bg-light0"></li>
-                                <li class="bg-light1"></li>
-                                <li class="bg-light2"></li>
-                            </ul>
+                            <hr class="style1">
+                            <h6>Owner: Bu Evi</h6>
+                            <hr>
                         </div>
                     </div>
-                    <div class="product-box">
-                        <div class="img-wrapper">
-                            <div class="lable-block"><span class="lable3">new</span> <span class="lable4">on
-                                    sale</span></div>
-                            <div class="front">
-                                <a href="product-page(no-sidebar).html"><img src="{{ asset ('assets-landingpage/images/pro3/33.jpg') }}"
-                                        class="img-fluid blur-up lazyload bg-img" alt=""></a>
+                    <div class="col-md-12">
+                        <a href="#">
+                            <div class="classic-effect">
+                                <div>
+                                    <img src="{{ asset ('assets-landingpage/images/blog/barokah.jpg')}}" height="250" width="250" class="mx-auto d-block"
+                                        alt="">
+                                </div>
+                                <span></span>
                             </div>
-                            <div class="back">
-                                <a href="product-page(no-sidebar).html"><img src="{{ asset ('assets-landingpage/images/pro3/34.jpg') }}"
-                                        class="img-fluid blur-up lazyload bg-img" alt=""></a>
-                            </div>
-                            <div class="cart-info cart-wrap">
-                                <button data-toggle="modal" data-target="#addtocart" title="Add to cart"><i
-                                        class="ti-shopping-cart"></i></button> <a href="javascript:void(0)"
-                                    title="Add to Wishlist"><i class="ti-heart" aria-hidden="true"></i></a> <a
-                                    href="#" data-toggle="modal" data-target="#quick-view" title="Quick View"><i
-                                        class="ti-search" aria-hidden="true"></i></a> <a href="compare.html"
-                                    title="Compare"><i class="ti-reload" aria-hidden="true"></i></a></div>
-                        </div>
-                        <div class="product-detail">
-                            <div class="rating"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
-                                    class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                            </div>
-                            <a href="product-page(no-sidebar).html">
-                                <h6>Slim Fit Cotton Shirt</h6>
+                        </a>
+                        <div class="blog-details">
+                            <h4>30 Januari 2020</h4>
+                            <a href="#">
+                                <p>Warteg Barokah</p>
                             </a>
-                            <h4>$500.00</h4>
-                            <ul class="color-variant">
-                                <li class="bg-light0"></li>
-                                <li class="bg-light1"></li>
-                                <li class="bg-light2"></li>
-                            </ul>
+                            <hr class="style1">
+                            <h6>Owner: Ibu Siti Barokah</h6>
+                            <hr>
                         </div>
                     </div>
+                    <div class="col-md-12">
+                        <a href="#">
+                            <div class="classic-effect">
+                                <div>
+                                    <img src="{{ asset ('assets-landingpage/images/blog/mariam.jpg')}}" height="250" width="250" class="mx-auto d-block"
+                                        alt="">
+                                </div>
+                                <span></span>
+                            </div>
+                        </a>
+                        <div class="blog-details">
+                            <h4>25 Mei 2020</h4>
+                            <a href="#">
+                                <p>Warteg Mariam</p>
+                            </a>
+                            <hr class="style1">
+                            <h6>Owner: Hj.Rodi</h6>
+                            <hr>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
+    <hr>
 </section>
-<!-- Product slider end -->
+<!-- blog section end -->
 
 <!-- Parallax banner -->
 <section class="p-0">
@@ -241,7 +179,7 @@
                     <div class="banner-contain">
                         <h2>2020</h2>
                         <h3>WartegKu</h3>
-                        <h4>Aplikasi WartegKu</h4>
+                        <h4>Sahabat Bos Warteg</h4>
                     </div>
                 </div>
             </div>
