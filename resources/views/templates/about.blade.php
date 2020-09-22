@@ -53,7 +53,7 @@
                         class="img-fluid blur-up lazyload" alt=""></div>
             </div>
             <div class="col-sm-12">
-                <h4>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
+                <h4>WartegKu
                 </h4>
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
                 </p>
@@ -84,7 +84,7 @@
                     <div>
                         <div class="media">
                             <div class="text-center">
-                                <img src="../assets/images/avtar.jpg" alt="#">
+                                <img src="{{asset ('assets-landingpage/images/elfan.JPG')}}" alt="#">
                                 <h5>Helfanza Nanda Alfara</h5>
                                 <h6>Fullstack Developer</h6>
                             </div>
@@ -98,9 +98,9 @@
                     <div>
                         <div class="media">
                             <div class="text-center">
-                                <img src="../assets/images/2.jpg" alt="#">
+                                <img src="{{asset ('assets-landingpage/images/afif.JPG')}}" alt="#">
                                 <h5>Afif Maulana Iskandar</h5>
-                                <h6>Web Developer</h6>
+                                <h6>Mencari Jati diri</h6>
                             </div>
                             <div class="media-body">
                                 <p>you how all this mistaken idea of denouncing pleasure and praising pain was born
@@ -109,62 +109,7 @@
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <div class="media">
-                            <div class="text-center">
-                                <img src="../assets/images/avtar.jpg" alt="#">
-                                <h5>Mark Jecno</h5>
-                                <h6>Designer</h6>
-                            </div>
-                            <div class="media-body">
-                                <p>you how all this mistaken idea of denouncing pleasure and praising pain was born
-                                    and I will give you a complete account of the system, and expound the actual
-                                    teachings.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="media">
-                            <div class="text-center">
-                                <img src="../assets/images/avtar.jpg" alt="#">
-                                <h5>Mark Jecno</h5>
-                                <h6>Designer</h6>
-                            </div>
-                            <div class="media-body">
-                                <p>you how all this mistaken idea of denouncing pleasure and praising pain was born
-                                    and I will give you a complete account of the system, and expound the actual
-                                    teachings.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="media">
-                            <div class="text-center">
-                                <img src="../assets/images/avtar.jpg" alt="#">
-                                <h5>Mark Jecno</h5>
-                                <h6>Designer</h6>
-                            </div>
-                            <div class="media-body">
-                                <p>you how all this mistaken idea of denouncing pleasure and praising pain was born
-                                    and I will give you a complete account of the system, and expound the actual
-                                    teachings.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="media">
-                            <div class="text-center">
-                                <img src="../assets/images/avtar.jpg" alt="#">
-                                <h5>Mark Jecno</h5>
-                                <h6>Designer</h6>
-                            </div>
-                            <div class="media-body">
-                                <p>you how all this mistaken idea of denouncing pleasure and praising pain was born
-                                    and I will give you a complete account of the system, and expound the actual
-                                    teachings.</p>
-                            </div>
-                        </div>
-                    </div>
+                
                 </div>
             </div>
         </div>
