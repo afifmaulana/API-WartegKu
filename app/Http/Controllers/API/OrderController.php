@@ -13,7 +13,7 @@ class OrderController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth:user');
+        $this->middleware('auth:api-user');
     }
 
     public function order(Request $request)
@@ -23,7 +23,7 @@ class OrderController extends Controller
 
         $order = new Order();
         $order->store_id = $request['store_id'];
-        $order->user_id = Auth::guard('user')->user()->id;
+        $order->user_id = Auth::guard('api-user')->user()->id;
         $order->total_price = 0;
         $order->save();
 
@@ -50,7 +50,8 @@ class OrderController extends Controller
     public function orderByUser()
     {
         $order = OrderDetails::whereHas('order', function($order){
-            $order->where('user_id', Auth::guard('user')->user()->id);})->get();
+            $order->where('user_id', Auth::guard('api-user')->user()->id);
+        })->get();
         return response()->json([
             'message' => "Berhasil Menampilkan Order User",
             'data' => true,

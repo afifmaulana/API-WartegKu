@@ -84,7 +84,7 @@
                     <div>
                         <div class="media">
                             <div class="text-center">
-                                <img src="{{asset ('assets-landingpage/images/elfan.JPG')}}" alt="#">
+                                <img src="{{asset ('assets-landingpage/images/elfan.JPG')}}">
                                 <h5>Helfanza Nanda Alfara</h5>
                                 <h6>Fullstack Developer</h6>
                             </div>
@@ -109,7 +109,7 @@
                             </div>
                         </div>
                     </div>
-                
+
                 </div>
             </div>
         </div>

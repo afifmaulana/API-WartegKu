@@ -16,10 +16,10 @@ class OrderDetailResource extends JsonResource
     {
         return [
             "id" => $this->id,
-            "order" => new OrderResource($this->order),
-            'food' => new FoodDrinkResource($this->food),
             "qty" => $this->qty,
-            "price" => $this->price
+            "price" => $this->price,
+            "order" => new OrderResource($this->order),
+            'food' => new FoodDrinkResource($this->food)
         ];
     }
 }

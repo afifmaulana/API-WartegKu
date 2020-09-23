@@ -19,11 +19,7 @@ class FoodDrinkResource extends JsonResource
             "name" => $this->name,
             "description" => $this->description,
             "image" => $this->image,
-            "price" => $this->price,
-            "store" => [
-                "id" => $this->store['id'],
-                "name" => $this->store['name']
-            ]
+            "price" => $this->price
         ];
     }
 }
