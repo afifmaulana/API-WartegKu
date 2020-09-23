@@ -31,7 +31,7 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="profile-details text-center">
-                        <img src="{{asset('uploads/store/'.Auth::guard('store')->user()->logo)}}" alt=""
+                        <img src="{{Auth::guard('store')->user()->logo}}" alt=""
                                  class="img-fluid img-90 rounded-circle blur-up lazyloaded">
                             <h5 class="f-w-600 mb-0">{{Auth::guard('store')->user()->name}}</h5>
                             <span>{{Auth::guard('store')->user()->email}}</span>

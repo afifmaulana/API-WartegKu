@@ -7,6 +7,7 @@ use App\FoodDrink;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
 
 class FoodDrinkController extends Controller
 {
@@ -45,17 +46,35 @@ class FoodDrinkController extends Controller
      */
     public function store(Request $request)
     {
+        //Create tanpa AWS
+        // $image_food=$request->file('image');
+        // $filename=time().'.'.$image_food->getClientOriginalExtension();
+        // $path=public_path('uploads/store');
+        // $image_food->move($path,$filename);
+
+        // $food = new FoodDrink();
+        // $food->store_id = Auth::guard('store')->user()->id;
+        // $food->category_id = $request->category_id;
+        // $food->name = $request->name;
+        // $food->description = $request->description;
+        // $food->image = $filename;
+        // $food->price = $request->price;
+        // $food->save();
+        // return redirect()->route('food.index');
+
+
+        //Create dengan AWS
         $image_food=$request->file('image');
         $filename=time().'.'.$image_food->getClientOriginalExtension();
-        $path=public_path('uploads/store');
-        $image_food->move($path,$filename);
+        $path='foods/' . $filename;
+        Storage::disk('s3')->put($path, file_get_contents($image_food));
 
         $food = new FoodDrink();
         $food->store_id = Auth::guard('store')->user()->id;
         $food->category_id = $request->category_id;
         $food->name = $request->name;
         $food->description = $request->description;
-        $food->image = $filename;
+        $food->image = Storage::disk('s3')->url($path, $filename);
         $food->price = $request->price;
         $food->save();
         return redirect()->route('food.index');
@@ -104,10 +123,11 @@ class FoodDrinkController extends Controller
         if ($image_food==''){
             $food->image=$request->old_image;
         }else{
-            $filename=time().'.'.$image_food->getClientOriginalExtension();
-            $path=public_path('uploads/store');
-            $image_food->move($path,$filename);
-            $food->image = $filename;
+        $image_food=$request->file('image');
+        $filename=time().'.'.$image_food->getClientOriginalExtension();
+        $path='foods/' . $filename;
+        Storage::disk('s3')->put($path, file_get_contents($image_food));
+        $food->image = Storage::disk('s3')->url($path, $filename);
         }
 
         $food->update();

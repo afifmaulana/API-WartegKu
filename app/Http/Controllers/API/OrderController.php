@@ -58,4 +58,6 @@ class OrderController extends Controller
             'status' => OrderDetailResource::collection($order)
         ]);
     }
+
+    
 }

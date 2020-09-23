@@ -4,7 +4,7 @@
     </div>
     <div class="sidebar custom-scrollbar">
         <div class="sidebar-user text-center">
-            <div><img class="img-60 rounded-circle lazyloaded blur-up" src="{{asset('uploads/store/'.Auth::guard('store')->user()->logo)}}" alt="#">
+            <div><img class="img-60 rounded-circle lazyloaded blur-up" src="{{Auth::guard('store')->user()->logo}}" alt="#">
             </div>
             <h6 class="mt-3 f-14">JOHN</h6>
             <p>general manager.</p>

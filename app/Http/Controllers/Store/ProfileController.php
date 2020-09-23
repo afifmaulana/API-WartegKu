@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Store;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
 
 class ProfileController extends Controller
 {
@@ -45,11 +46,11 @@ class ProfileController extends Controller
         if ($request->file('logo') == ''){
             $data->logo = $request->old_ogo;
         }else{
-            $image=$request->file('logo');
-            $filename=rand().'.'.$image->getClientOriginalExtension();
-            $path=public_path('uploads/store');
-            $image->move($path,$filename);
-            $data->logo = $filename;
+            $image_food=$request->file('logo');
+            $filename=time().'.'.$image_food->getClientOriginalExtension();
+            $path='stores/' . $filename;
+            Storage::disk('s3')->put($path, file_get_contents($image_food));
+            $data->logo = Storage::disk('s3')->url($path, $filename);
         }
         $data->save();
 

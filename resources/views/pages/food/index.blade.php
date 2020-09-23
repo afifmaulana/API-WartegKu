@@ -33,7 +33,7 @@
             <div class="card-body product-box">
                 <div class="img-wrapper">
                     <div class="front">
-                        <a href="#"><img src="{{asset('uploads/store/'.$food->image)}}" class="img-fluid blur-up lazyload bg-img" alt=""></a>
+                        <a href="#"><img src="{{$food->image}}" class="img-fluid blur-up lazyload bg-img" alt=""></a>
                         <div class="product-hover">
                             <ul class="btn">
                                 <li>
