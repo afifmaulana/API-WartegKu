@@ -136,7 +136,6 @@
 </section>
 <!-- Parallax banner end -->
 
-
 <!-- footer -->
 @include('.templates.partials.landingpage._footer')
 <!-- footer end -->
@@ -145,7 +144,6 @@
 @include('templates.partials.landingpage._script')
 
 </body>
-
 
 <!-- Mirrored from themes.pixelstrap.com/multikart/front-end/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Sep 2020 22:08:16 GMT -->
 </html>
