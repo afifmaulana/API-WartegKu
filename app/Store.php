@@ -8,6 +8,13 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class Store extends Authenticatable
 {
+
+    public function foods()
+    {
+        return $this->hasMany(FoodDrink::class, 'store_id', 'id');
+    }
+
+
     use Notifiable;
 
     /**

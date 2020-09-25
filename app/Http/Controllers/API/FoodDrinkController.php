@@ -18,12 +18,13 @@ class FoodDrinkController extends Controller
         $foods = FoodDrink::where('category_id', $category_id)->get();
         $result = [];
         foreach ($foods as $food) {
-            array_push($result,$food->store);
+            array_push($result, $food->store);
         }
+        $arr_unique = array_unique($result);
         return response()->json([
             'message' => 'Berhasil Menampilkan Store',
             'status' => true,
-            'data' => StoreResource::collection($result)
+            'data' => StoreResource::collection($arr_unique)
         ]);
 
     }

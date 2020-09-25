@@ -16,11 +16,15 @@ use Illuminate\Support\Facades\Route;
 
 Route::post('/register', 'API\AuthController@register');
 Route::post('/login', 'API\AuthController@login');
+
 Route::get('/category', 'API\CategoryController@category');
 Route::get('/category/food', 'API\CategoryController@FoodCategory');
 Route::get('/category/drink', 'API\CategoryController@DrinkCategory');
-Route::get('/store/{category_id}', 'API\FoodDrinkController@StoreCategory');
+
 Route::get('/food/latest', 'API\FoodDrinkController@showFoodLatest');
 Route::get('/food/{store_id}', 'API\FoodDrinkController@FoodStore');
 Route::post('/order', 'API\OrderController@order');
 Route::get('/order/user', 'API\OrderController@orderByUser');
+
+Route::get('/store/search/{query}', 'API\StoreController@searchByFood');
+Route::get('/store/{category_id}', 'API\FoodDrinkController@StoreCategory');
