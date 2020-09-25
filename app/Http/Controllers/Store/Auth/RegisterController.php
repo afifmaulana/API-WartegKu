@@ -55,6 +55,7 @@ class RegisterController extends Controller
 //        ]);
 
         $data = new Store();
+        $data->owner = $request->owner;
         $data->name = $request->name;
         $data->email = $request->email;
         $data->password = bcrypt($request->password);

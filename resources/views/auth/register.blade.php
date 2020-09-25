@@ -115,6 +115,16 @@
                     <form class="theme-form" method="POST" action="{{route('store.register.submit')}}">
                         @csrf
                         <div class="form-group">
+                            <label for="name">Nama Pemilik</label>
+                            <input type="text" class="form-control @error('owner') is-invalid @enderror" id="name"
+                                   placeholder="Masukkan Nama Warung" name="owner" required="" value="{{ old('name') }}">
+                            @error('owner')
+                            <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                            </span>
+                            @enderror
+                        </div>
+                        <div class="form-group">
                             <label for="name">Nama Warung</label>
                             <input type="text" class="form-control @error('name') is-invalid @enderror" id="name"
                                    placeholder="Masukkan Nama Warung" name="name" required="" value="{{ old('name') }}">

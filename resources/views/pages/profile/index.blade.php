@@ -141,6 +141,19 @@
                                         <form class="theme-form" method="POST" action="{{route('profile.store')}}" enctype="multipart/form-data">
                                                 @csrf
                                                 <div class="form-group">
+                                                    <label for="name">Nama Pemilik</label>
+                                                    <input type="text"
+                                                           class="form-control @error('owner') is-invalid @enderror"
+                                                           id="owner"
+                                                           placeholder="Masukkan Nama Pemilik" name="owner" required=""
+                                                           value="{{Auth::guard('store')->user()->name}}">
+                                                    @error('owner')
+                                                    <span class="invalid-feedback" role="alert">
+                                                        <strong>{{ $message }}</strong>
+                                                    </span>
+                                                    @enderror
+                                                </div>
+                                                <div class="form-group">
                                                     <label for="name">Nama Warung</label>
                                                     <input type="text"
                                                            class="form-control @error('name') is-invalid @enderror"

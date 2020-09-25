@@ -41,6 +41,7 @@ class ProfileController extends Controller
     public function store(Request $request)
     {
         $data = Auth::guard('store')->user();
+        $data->owner = $request->owner;
         $data->name = $request->name;
         $data->address = $request->address;
         if ($request->file('logo') == ''){

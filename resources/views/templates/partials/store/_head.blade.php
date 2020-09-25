@@ -7,7 +7,7 @@
     <meta name="author" content="WartegKu">
     <link rel="icon" href="{{ asset ('assets/images/favicon.png') }}" type="image/x-icon">
     <link rel="shortcut icon" href="{{ asset ('assets/images/favicon.png') }}'" type="image/x-icon">
-    <title>WartegKu-Siap Jadi Partnermu</title>
+    <title>WartegKu-Ayo Jalin Hubungan Denganku</title>
 
     <!-- Google font-->
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">

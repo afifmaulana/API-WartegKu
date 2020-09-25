@@ -50,7 +50,7 @@
                             <td>{{$loop->iteration}}</td>
                             <td>
                                 <div class="d-flex">
-                                    <img src="{{asset('uploads/store/'.$data->food->image)}}" alt="" class="img-fluid img-30 mr-2 blur-up lazyloaded">
+                                    <img src="{{ $data->food->image }}" alt="" class="img-fluid img-30 mr-2 blur-up lazyloaded">
                                 </div>
                             </td>
                         <td>{{$data->food->name}}</td>

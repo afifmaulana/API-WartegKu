@@ -12,28 +12,32 @@ class StoreSeeder extends Seeder
     public function run()
     {
         \App\Store::create([
-            'name' => 'Helfanza',
+            'owner' => 'Helfanza',
+            'name' => 'Warteg Barokah',
             'email' => "helfanza@gmail.com",
             'password' => \Illuminate\Support\Facades\Hash::make('12345678'),
             'logo' => "sample.jpg",
             'address' => "Margadana Tegal",
         ]);
         \App\Store::create([
-            'name' => 'Nanda Alfaradis',
+            'owner' => 'Nanda Alfaradis',
+            'name' => 'Warteg Explore',
             'email' => "nanda@gmail.com",
             'password' => \Illuminate\Support\Facades\Hash::make('12345678'),
             'logo' => "sample.jpg",
             'address' => "Margadana Tegal",
         ]);
         \App\Store::create([
-            'name' => 'Afif',
+            'owner' => 'Afif',
+            'name' => 'Warteg Afif',
             'email' => "afif@gmail.com",
             'password' => \Illuminate\Support\Facades\Hash::make('12345678'),
             'logo' => "sample.jpg",
             'address' => "Bulakamba Brebes",
         ]);
         \App\Store::create([
-            'name' => 'Iskandar Muda',
+            'owner' => 'Iskandar',
+            'name' => 'Warteg Brengos',
             'email' => "iskandar@gmail.com",
             'password' => \Illuminate\Support\Facades\Hash::make('12345678'),
             'logo' => "sample.jpg",
