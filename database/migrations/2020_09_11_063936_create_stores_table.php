@@ -15,6 +15,7 @@ class CreateStoresTable extends Migration
     {
         Schema::create('stores', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('clock_id')->unsigned()->nullable();
             $table->string('owner');
             $table->string('name');
             $table->string('email');
@@ -23,6 +24,7 @@ class CreateStoresTable extends Migration
             $table->text('address')->nullable();
             $table->boolean('active')->default(true);
             $table->timestamps();
+
         });
     }
 

@@ -3,6 +3,7 @@
 namespace App\Http\Resources;
 
 use App\Favorite;
+use Carbon\Carbon;
 use Illuminate\Http\Resources\Json\JsonResource;
 use Illuminate\Support\Facades\Auth;
 
@@ -16,7 +17,7 @@ class StoreResource extends JsonResource
      */
     public function toArray($request)
     {
-        
+
         $userIsLogged = Auth::guard('api-user')->user();
 
         if($userIsLogged){
@@ -27,10 +28,22 @@ class StoreResource extends JsonResource
         }
         return [
             "id" => $this->id,
+            "owner" => $this->owner,
             "name" => $this->name,
             "logo" => $this->logo,
             "address" => $this->address,
-            "favorite" => $favorite
+            "favorite" => $favorite,
+
+           "opening_hours" => Carbon::parse($this->clock->opening_hours)->format('H:i'),
+           "closing_hours" => Carbon::parse($this->clock->closing_hours)->format('H:i')
+            // "opening_hours" => $this->clock->opening_hours,
+            // "closing_hours" => $this->clock->closing_hours
+
+
+            // "clock" => [
+            //     "opening_hours" => $this->clock['opening_hours'],
+            //     "closing_hours" => $this->clock['closing_hours']
+            // ]
         ];
     }
 }

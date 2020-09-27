@@ -14,6 +14,11 @@ class Store extends Authenticatable
         return $this->hasMany(FoodDrink::class, 'store_id', 'id');
     }
 
+    public function clock()
+    {
+        return $this->belongsTo(Clock::class, 'clock_id', 'id');
+    }
+
 
     use Notifiable;
 
