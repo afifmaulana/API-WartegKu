@@ -16,6 +16,7 @@ class StoreResource extends JsonResource
      */
     public function toArray($request)
     {
+        
         $userIsLogged = Auth::guard('api-user')->user();
 
         if($userIsLogged){
@@ -24,7 +25,6 @@ class StoreResource extends JsonResource
         }else{
             $favorite = false;
         }
-
         return [
             "id" => $this->id,
             "name" => $this->name,

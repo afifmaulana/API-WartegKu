@@ -22,7 +22,7 @@ class StoreController extends Controller
                 array_push($results, $store);
             }
         }
-        
+
         return response()->json([
             'message' => 'Berhasil Menampilkan Data',
             'status' => true,

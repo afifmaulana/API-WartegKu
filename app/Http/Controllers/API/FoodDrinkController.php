@@ -26,7 +26,6 @@ class FoodDrinkController extends Controller
             'status' => true,
             'data' => StoreResource::collection($arr_unique)
         ]);
-
     }
 
     public function FoodStore($store_id)
@@ -48,5 +47,5 @@ class FoodDrinkController extends Controller
             'data' => $foods
         ]);
     }
-
+    
 }
