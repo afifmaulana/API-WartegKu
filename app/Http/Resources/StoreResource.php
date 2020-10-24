@@ -26,24 +26,29 @@ class StoreResource extends JsonResource
         }else{
             $favorite = false;
         }
+
+        $timeNow = Carbon::now();
+
+        $openingHours = Carbon::parse($this->clock->opening_hours)->format('H:i');
+        $closingHours = Carbon::parse($this->clock->closing_hours)->format('H:i');
+        $open = Carbon::createFromDate($this->clock->opening_hours);
+        $close = Carbon::createFromDate($this->clock->closing_hours);
+        if (!$timeNow->between($open, $close, true)) {
+            $isOpened = true;
+        }else{
+            $isOpened = false;
+        }
+
         return [
-            "id" => $this->id,
-            "owner" => $this->owner,
-            "name" => $this->name,
-            "logo" => $this->logo,
-            "address" => $this->address,
-            "favorite" => $favorite,
-
-           "opening_hours" => Carbon::parse($this->clock->opening_hours)->format('H:i'),
-           "closing_hours" => Carbon::parse($this->clock->closing_hours)->format('H:i')
-            // "opening_hours" => $this->clock->opening_hours,
-            // "closing_hours" => $this->clock->closing_hours
-
-
-            // "clock" => [
-            //     "opening_hours" => $this->clock['opening_hours'],
-            //     "closing_hours" => $this->clock['closing_hours']
-            // ]
+            "id"            => $this->id,
+            "owner"         => $this->owner,
+            "name"          => $this->name,
+            "logo"          => $this->logo,
+            "address"       => $this->address,
+            "favorite"      => $favorite,
+            "opening_hours" => $openingHours,
+            "closing_hours" => $closingHours,
+            "is_opened"     => $isOpened
         ];
     }
 }
