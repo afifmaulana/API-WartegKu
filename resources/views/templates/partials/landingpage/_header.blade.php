@@ -8,7 +8,7 @@
                     <div class="menu-left">
 
                         <div class="brand-logo">
-                            <a href=""><img src="{{asset ('assets-landingpage/images/wartegku.png') }}" alt="" width="160" height="100"
+                            <a href="/"><img src="{{asset ('assets-landingpage/images/wartegku.png') }}" alt="" width="160" height="100"
                                                       class="img-fluid blur-up lazyload"></a>
                         </div>
                     </div>
@@ -21,7 +21,7 @@
                                         <div class="mobile-back text-right">Back<i class="fas fa-angle-right"
                                                 aria-hidden="true"></i></div>
                                     </li>
-                                    <li><a href="home">Beranda</a></li>
+                                    <li><a href="/">Beranda</a></li>
                                 <li><a href="{{route('about.index')}}">Tentang</a></li>
                                     <li><a href="#">Blog</a></li>
                                     <li><a href="#">Bantuan</a></li>

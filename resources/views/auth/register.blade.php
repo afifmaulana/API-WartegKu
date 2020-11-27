@@ -53,7 +53,7 @@
                 <div class="main-menu">
                     <div class="menu-left">
                         <div class="brand-logo">
-                            <a href="home"><img src="{{asset ('assets-landingpage/images/wartegku.png') }}" alt="" width="170" height="100"
+                            <a href="/"><img src="{{asset ('assets-landingpage/images/wartegku.png') }}" alt="" width="170" height="100"
                                                       class="img-fluid blur-up lazyload"></a>
                         </div>
                     </div>
@@ -66,7 +66,7 @@
                                         <div class="mobile-back text-right">Back<i class="fas fa-angle-right"
                                                 aria-hidden="true"></i></div>
                                     </li>
-                                    <li><a href="home">Beranda</a></li>
+                                    <li><a href="/">Beranda</a></li>
                                     <li><a href="{{route('about.index')}}">Tentang</a></li>
                                     <li><a href="#">Blog</a></li>
                                     <li><a href="#">Bantuan</a></li>
@@ -94,7 +94,7 @@
             <div class="col-sm-6">
                 <nav aria-label="breadcrumb" class="theme-breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
+                        <li class="breadcrumb-item"><a href="/">Beranda</a></li>
                         <li class="breadcrumb-item active">Daftar</li>
                     </ol>
                 </nav>
@@ -174,26 +174,31 @@
             <div class="row">
                 <div class="col-xl-6 col-md-6 col-sm-12">
                     <div class="footer-end">
-                        <p><i class="fa fa-copyright" aria-hidden="true"></i> 2020 WartegKu | Ayo Jalin Hubungan Denganku</p>
+                        <p><i class="fas fa-copyright" aria-hidden="true"></i> 2020 WartegKu | Ayo Jalin Hubungan Denganku</p>
                     </div>
                 </div>
                 <div class="col-xl-6 col-md-6 col-sm-12">
                     <div class="payment-card-bottom">
                         <ul>
                             <li>
-                                <a href="#"><img src="../assets/images/icon/visa.png" alt=""></a>
+                                <a href="#"><img src="{{ asset ('assets-landingpage/images/icon/visa.png') }}"
+                                                 alt=""></a>
                             </li>
                             <li>
-                                <a href="#"><img src="../assets/images/icon/mastercard.png" alt=""></a>
+                                <a href="#"><img src="{{ asset ('assets-landingpage/images/icon/mastercard.png') }}"
+                                                 alt=""></a>
                             </li>
                             <li>
-                                <a href="#"><img src="../assets/images/icon/paypal.png" alt=""></a>
+                                <a href="#"><img src="{{ asset ('assets-landingpage/images/icon/paypal.png') }}" alt=""></a>
                             </li>
                             <li>
-                                <a href="#"><img src="../assets/images/icon/american-express.html" alt=""></a>
+                                <a href="#"><img
+                                            src="{{ asset ('assets-landingpage/images/icon/american-express.html') }}"
+                                            alt=""></a>
                             </li>
                             <li>
-                                <a href="#"><img src="../assets/images/icon/discover.png" alt=""></a>
+                                <a href="#"><img src="{{ asset ('assets-landingpage/images/icon/discover.png') }}"
+                                                 alt=""></a>
                             </li>
                         </ul>
                     </div>
